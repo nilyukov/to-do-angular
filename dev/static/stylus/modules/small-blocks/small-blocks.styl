@@ -1,0 +1,32 @@
+.sandwich
+  height: 20px
+  width: 40px
+  position: relative;
+  &__line
+    height: 2px
+    width: 100%
+    position absolute
+    background-color: rgba(white, .5)
+    transition all lineart .3s
+    &.sandwich__line
+      &--top
+        bottom 17px
+      &--middle
+        bottom 9px
+        opacity: 1
+      &--bottom
+        bottom: 0
+
+  &.is
+    &-active
+      .sandwich
+        &__line
+          &.sandwich__line
+            &--top
+              bottom 10px
+              transform rotate(-45deg)
+            &--middle
+              opacity: 0
+            &--bottom
+              bottom 10px
+              transform rotate(45deg)

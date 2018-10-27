@@ -1,3 +1,6 @@
 header
-    .header.header--bg__transparent
+    if(pageClass === 'sign-up-page')
         include ../../modules/header/sign-up
+    else if(pageClass === 'walkthrough-page')
+        include ../../modules/header/walkthrough
+
