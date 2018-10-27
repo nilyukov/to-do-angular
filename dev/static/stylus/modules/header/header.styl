@@ -1,0 +1,29 @@
+header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+.header
+  background-color: rgba(255, 255, 255, .1)
+  padding: 30px 15px 15px
+  display: flex
+  &.header
+    &--bg
+      &__transparent
+        background: transparent
+
+  &__right
+    margin-left: auto
+
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    size(30px)
+    &-icon
+      size(20px)
+      fill white
+      opacity: .5
+
