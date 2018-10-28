@@ -11,11 +11,6 @@ html
 body
 	font-family mainFont
 	height 100%
-	background-image: url(../img/general/bg.jpg)
-	background-repeat: no-repeat
-	background-size cover
-	background-position bottom top
-
 
 h1,h2,h3,h4,h5,h6
 	margin 0
@@ -55,13 +50,21 @@ button
 	box-sizing border-box
 
 .wrapper
-	display flex
-	flex-direction column
+	background-image: url(../img/general/bg.jpg)
+	background-repeat: no-repeat
+	background-size cover
+	background-position bottom top
 	height 100%
+	&__inner
+		display: flex
+		flex-direction: column
+		height: 100%
+		position: relative
+		overflow: hidden
 
 .content
-	flex 1 0 auto
-	height: 100%
+	flex 1
+	overflow auto
 
 .container
 	margin: 0 auto
